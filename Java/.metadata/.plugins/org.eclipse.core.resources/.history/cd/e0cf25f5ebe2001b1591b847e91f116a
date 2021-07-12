@@ -1,0 +1,50 @@
+package com.test.datastructure;
+
+public class Combination {
+	
+	
+	private static boolean[] selected;
+	private static int arr[];
+	private static int totalCnt = 0;
+	
+	
+	public static void main(String[] args) {
+		
+		selected = new boolean[3];
+		arr = new int[]{1,2,3};
+		
+		dfs(0,0);
+		
+	}	
+	
+	
+	public static void dfs(int idx, int cnt) {
+		
+		if (cnt == 3) {
+			totalCnt++;
+			print();
+			
+		}
+		
+		for (int i = idx; i < arr.length; i++) {
+			
+			if(selected[i]) continue;
+			
+			selected[i] = true;
+			
+			dfs(i,cnt+1);
+			selected[i] = false;
+		}
+	}
+	
+	public void print() {
+		for(int i = 0; i < arr.length; i++) {
+			if (selected[i]) {
+				System.out.print(arr[i] + " ");
+			}
+			System.out.println();
+		}
+	}
+	
+	
+}

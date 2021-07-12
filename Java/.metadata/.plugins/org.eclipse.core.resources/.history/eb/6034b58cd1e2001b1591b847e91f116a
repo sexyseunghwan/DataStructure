@@ -1,0 +1,27 @@
+package com.test.datastructure;
+
+public class Permutation {
+	
+	
+	private static int[] list;
+	private static int[] resultList;
+	private static boolean[] visited;
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+	}
+	
+	
+	public static void permutation(int idx) {
+		
+		if (idx == 3) {
+			
+		}
+		
+	}
+	
+	
+}

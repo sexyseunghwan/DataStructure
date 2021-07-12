@@ -1,0 +1,26 @@
+package com.test.datastructure;
+
+public class Combination {
+	
+	
+	private static boolean[] selected;
+	private int totalCnt = 0;
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+	}	
+	
+	
+	public void dfs(int idx, int cnt) {
+		
+		if (cnt == 3) {
+			totalCnt++;
+		}
+		
+	}
+	
+}
