@@ -427,3 +427,948 @@ Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git
 	at java.io.FileInputStream.<init>(FileInputStream.java:93)
 	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:181)
 	... 74 more
+!SESSION 2021-07-24 17:10:57.667 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_281
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/sinseunghwan/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/sinseunghwan/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2021-07-24 17:11:12.411
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2021-07-24 17:11:14.552
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-07-24 17:11:14.552
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@712c9bcf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c34c491,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 4 0 2021-07-24 17:14:19.446
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (No such file or directory))
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4992)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:361)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:105)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:197)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:208)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:463)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4385)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1512)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1535)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1516)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:808)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6116)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:80)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:270)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4249)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3782)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1158)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1047)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+Caused by: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (No such file or directory))
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:184)
+	at org.eclipse.tm.terminal.view.ui.local.showin.ExternalExecutablesManager.loadImage(ExternalExecutablesManager.java:282)
+	at org.eclipse.tm.terminal.view.ui.local.showin.DynamicContributionItems.getContributionItems(DynamicContributionItems.java:74)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:83)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:57)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:146)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:729)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:806)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:673)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1224)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicVisible(MenuManagerRenderer.java:213)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 60 more
+Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:181)
+	... 74 more
+
+!ENTRY org.eclipse.ui 4 0 2021-07-24 17:14:21.356
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (No such file or directory))
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4992)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:361)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:105)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:197)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:208)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:463)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4385)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1512)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1535)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1516)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:808)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6116)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:80)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:270)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4249)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3782)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1158)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1047)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+Caused by: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (No such file or directory))
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:184)
+	at org.eclipse.tm.terminal.view.ui.local.showin.ExternalExecutablesManager.loadImage(ExternalExecutablesManager.java:282)
+	at org.eclipse.tm.terminal.view.ui.local.showin.DynamicContributionItems.getContributionItems(DynamicContributionItems.java:74)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:83)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:57)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:146)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:729)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:806)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:673)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1224)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicVisible(MenuManagerRenderer.java:213)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 60 more
+Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:181)
+	... 74 more
+!SESSION 2021-07-24 17:15:09.719 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_281
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/sinseunghwan/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/sinseunghwan/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2021-07-24 17:15:20.561
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2021-07-24 17:15:22.187
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-07-24 17:15:22.187
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@63d75087,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4c8afba,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2021-07-24 17:16:34.078 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_281
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/sinseunghwan/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/Users/sinseunghwan/Desktop/DataStructure/Java/ -product org.eclipse.epp.package.jee.product -keyring /Users/sinseunghwan/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2021-07-24 17:16:47.218
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2021-07-24 17:16:49.383
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-07-24 17:16:49.383
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@73476e2d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@52b77d5e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 4 0 2021-07-24 17:17:09.239
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (No such file or directory))
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4992)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:361)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:105)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:197)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:208)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:463)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4385)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1512)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1535)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1516)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:808)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6116)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:80)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:270)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4249)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3782)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1158)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1047)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+Caused by: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (No such file or directory))
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:184)
+	at org.eclipse.tm.terminal.view.ui.local.showin.ExternalExecutablesManager.loadImage(ExternalExecutablesManager.java:282)
+	at org.eclipse.tm.terminal.view.ui.local.showin.DynamicContributionItems.getContributionItems(DynamicContributionItems.java:74)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:83)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:57)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:146)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:729)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:806)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:673)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1224)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicVisible(MenuManagerRenderer.java:213)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 60 more
+Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:181)
+	... 74 more
+
+!ENTRY org.eclipse.ui 4 0 2021-07-24 17:20:31.183
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (No such file or directory))
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4992)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:361)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:113)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:197)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:208)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:463)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4385)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1512)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1535)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1516)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:808)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6116)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:80)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:270)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4249)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3782)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1158)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1047)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+Caused by: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (No such file or directory))
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:184)
+	at org.eclipse.tm.terminal.view.ui.local.showin.ExternalExecutablesManager.loadImage(ExternalExecutablesManager.java:282)
+	at org.eclipse.tm.terminal.view.ui.local.showin.DynamicContributionItems.getContributionItems(DynamicContributionItems.java:74)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:83)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:57)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:146)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:729)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:806)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:673)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1224)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicVisible(MenuManagerRenderer.java:213)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 60 more
+Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:181)
+	... 74 more
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2021-07-24 17:30:13.312
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2021-07-24 17:30:13.314
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE Software being installed: EMF - Eclipse Modeling Framework SDK 2.11.2.v20160208-0841 (org.eclipse.emf.sdk.feature.group 2.11.2.v20160208-0841)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE Software currently installed: Eclipse IDE for Enterprise Java Developers 4.16.0.20200615-1200 (epp.package.jee 4.16.0.20200615-1200)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE Software currently installed: Eclipse XSL Developer Tools 1.3.900.v202005251734 (org.eclipse.wst.xsl.feature.feature.group 1.3.900.v202005251734)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.314
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE Core Runtime 3.22.0.v20210506-1025 (org.eclipse.core.runtime 3.22.0.v20210506-1025)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE Core Runtime 3.11.0.v20150405-1723 (org.eclipse.core.runtime 3.11.0.v20150405-1723)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE Core Runtime 3.11.1.v20150903-1804 (org.eclipse.core.runtime 3.11.1.v20150903-1804)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE Core Runtime 3.18.0.v20200506-2143 (org.eclipse.core.runtime 3.18.0.v20200506-2143)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.314
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE EMF Common 2.22.0.v20210319-0732 (org.eclipse.emf.common 2.22.0.v20210319-0732)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE EMF Common 2.19.0.v20200324-0932 (org.eclipse.emf.common 2.19.0.v20200324-0932)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE EMF Common 2.11.0.v20150805-0538 (org.eclipse.emf.common 2.11.0.v20150805-0538)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE EMF Common 2.11.0.v20150512-0501 (org.eclipse.emf.common 2.11.0.v20150512-0501)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE EMF Common 2.11.1.v20160208-0816 (org.eclipse.emf.common 2.11.1.v20160208-0816)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.314
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE From: Eclipse IDE for Enterprise Java Developers 4.16.0.20200615-1200 (epp.package.jee 4.16.0.20200615-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.platform.feature.group [4.16.0.v20200604-0951,4.16.0.v20200604-0951]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.314
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE From: EMF Common 2.11.1.v20160208-0816 (org.eclipse.emf.common.feature.group 2.11.1.v20160208-0816)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.emf.common [2.11.1.v20160208-0816,2.11.1.v20160208-0816]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.314
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE From: EMF - Eclipse Modeling Framework Runtime and Tools 2.11.2.v20160208-0841 (org.eclipse.emf.feature.group 2.11.2.v20160208-0841)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.emf.common.feature.group [2.11.1.v20160208-0816,2.11.1.v20160208-0816]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.314
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE From: EMF - Eclipse Modeling Framework SDK 2.11.2.v20160208-0841 (org.eclipse.emf.sdk.feature.group 2.11.2.v20160208-0841)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.emf.feature.group [2.11.2.v20160208-0841,2.11.2.v20160208-0841]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.314
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE From: Eclipse Platform 4.16.0.v20200604-0951 (org.eclipse.platform.feature.group 4.16.0.v20200604-0951)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.core.runtime [3.18.0.v20200506-2143,3.18.0.v20200506-2143]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.314
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE From: Structured Source Model 1.2.400.v202004081818 (org.eclipse.wst.sse.core 1.2.400.v202004081818)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.314
+!MESSAGE To: osgi.bundle; org.eclipse.emf.common [2.14.0,3.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.315
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.315
+!MESSAGE From: Structured Source Model 1.2.600.v202102110535 (org.eclipse.wst.sse.core 1.2.600.v202102110535)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.315
+!MESSAGE To: osgi.bundle; org.eclipse.emf.common [2.14.0,3.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.315
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.315
+!MESSAGE From: Eclipse XML Editors and Tools 1.2.400.v202005192253 (org.eclipse.wst.xml.ui 1.2.400.v202005192253)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.315
+!MESSAGE To: osgi.bundle; org.eclipse.wst.sse.core [1.2.0,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.315
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.315
+!MESSAGE From: Eclipse XML Editors and Tools 1.2.600.v202102222242 (org.eclipse.wst.xml.ui 1.2.600.v202102222242)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.315
+!MESSAGE To: osgi.bundle; org.eclipse.core.runtime [3.20.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.315
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.315
+!MESSAGE From: Eclipse XSL Developer Tools 1.3.900.v202005251734 (org.eclipse.wst.xsl.feature.feature.group 1.3.900.v202005251734)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.315
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.wst.xsl.jaxp.debug.ui [1.1.0.v201901071922,1.1.0.v201901071922]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.315
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.315
+!MESSAGE From: XSL JAXP Debug UI 1.1.0.v201901071922 (org.eclipse.wst.xsl.jaxp.debug.ui 1.1.0.v201901071922)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.315
+!MESSAGE To: osgi.bundle; org.eclipse.wst.xml.ui [1.2.0,2.0.0)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2021-07-24 17:30:13.343
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2021-07-24 17:30:13.343
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.344
+!MESSAGE Software being installed: EMF - Eclipse Modeling Framework SDK 2.11.2.v20160208-0841 (org.eclipse.emf.sdk.feature.group 2.11.2.v20160208-0841)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.344
+!MESSAGE Software currently installed: Eclipse IDE for Enterprise Java Developers 4.16.0.20200615-1200 (epp.package.jee 4.16.0.20200615-1200)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.344
+!MESSAGE Software currently installed: Eclipse XSL Developer Tools 1.3.900.v202005251734 (org.eclipse.wst.xsl.feature.feature.group 1.3.900.v202005251734)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.344
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE Core Runtime 3.22.0.v20210506-1025 (org.eclipse.core.runtime 3.22.0.v20210506-1025)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE Core Runtime 3.11.0.v20150405-1723 (org.eclipse.core.runtime 3.11.0.v20150405-1723)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE Core Runtime 3.11.1.v20150903-1804 (org.eclipse.core.runtime 3.11.1.v20150903-1804)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE Core Runtime 3.18.0.v20200506-2143 (org.eclipse.core.runtime 3.18.0.v20200506-2143)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.345
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE EMF Common 2.22.0.v20210319-0732 (org.eclipse.emf.common 2.22.0.v20210319-0732)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE EMF Common 2.19.0.v20200324-0932 (org.eclipse.emf.common 2.19.0.v20200324-0932)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE EMF Common 2.11.0.v20150805-0538 (org.eclipse.emf.common 2.11.0.v20150805-0538)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE EMF Common 2.11.0.v20150512-0501 (org.eclipse.emf.common 2.11.0.v20150512-0501)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE EMF Common 2.11.1.v20160208-0816 (org.eclipse.emf.common 2.11.1.v20160208-0816)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.345
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE From: Eclipse IDE for Enterprise Java Developers 4.16.0.20200615-1200 (epp.package.jee 4.16.0.20200615-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.platform.feature.group [4.16.0.v20200604-0951,4.16.0.v20200604-0951]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.345
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE From: EMF Common 2.11.1.v20160208-0816 (org.eclipse.emf.common.feature.group 2.11.1.v20160208-0816)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.emf.common [2.11.1.v20160208-0816,2.11.1.v20160208-0816]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.345
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE From: EMF - Eclipse Modeling Framework Runtime and Tools 2.11.2.v20160208-0841 (org.eclipse.emf.feature.group 2.11.2.v20160208-0841)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.emf.common.feature.group [2.11.1.v20160208-0816,2.11.1.v20160208-0816]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.345
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE From: EMF - Eclipse Modeling Framework SDK 2.11.2.v20160208-0841 (org.eclipse.emf.sdk.feature.group 2.11.2.v20160208-0841)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.emf.feature.group [2.11.2.v20160208-0841,2.11.2.v20160208-0841]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.345
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE From: Eclipse Platform 4.16.0.v20200604-0951 (org.eclipse.platform.feature.group 4.16.0.v20200604-0951)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.core.runtime [3.18.0.v20200506-2143,3.18.0.v20200506-2143]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.345
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE From: Structured Source Model 1.2.400.v202004081818 (org.eclipse.wst.sse.core 1.2.400.v202004081818)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE To: osgi.bundle; org.eclipse.emf.common [2.14.0,3.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.345
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE From: Structured Source Model 1.2.600.v202102110535 (org.eclipse.wst.sse.core 1.2.600.v202102110535)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE To: osgi.bundle; org.eclipse.emf.common [2.14.0,3.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.345
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE From: Eclipse XML Editors and Tools 1.2.400.v202005192253 (org.eclipse.wst.xml.ui 1.2.400.v202005192253)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE To: osgi.bundle; org.eclipse.wst.sse.core [1.2.0,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.345
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE From: Eclipse XML Editors and Tools 1.2.600.v202102222242 (org.eclipse.wst.xml.ui 1.2.600.v202102222242)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE To: osgi.bundle; org.eclipse.core.runtime [3.20.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.345
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE From: Eclipse XSL Developer Tools 1.3.900.v202005251734 (org.eclipse.wst.xsl.feature.feature.group 1.3.900.v202005251734)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.wst.xsl.jaxp.debug.ui [1.1.0.v201901071922,1.1.0.v201901071922]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:30:13.345
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE From: XSL JAXP Debug UI 1.1.0.v201901071922 (org.eclipse.wst.xsl.jaxp.debug.ui 1.1.0.v201901071922)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:30:13.345
+!MESSAGE To: osgi.bundle; org.eclipse.wst.xml.ui [1.2.0,2.0.0)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2021-07-24 17:32:08.825
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2021-07-24 17:32:08.827
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE Software being installed: EMF - Eclipse Modeling Framework SDK 2.11.2.v20160208-0841 (org.eclipse.emf.sdk.feature.group 2.11.2.v20160208-0841)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE Software currently installed: Eclipse IDE for Enterprise Java Developers 4.16.0.20200615-1200 (epp.package.jee 4.16.0.20200615-1200)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE Software currently installed: Eclipse XSL Developer Tools 1.3.900.v202005251734 (org.eclipse.wst.xsl.feature.feature.group 1.3.900.v202005251734)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.827
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE Core Runtime 3.22.0.v20210506-1025 (org.eclipse.core.runtime 3.22.0.v20210506-1025)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE Core Runtime 3.11.0.v20150405-1723 (org.eclipse.core.runtime 3.11.0.v20150405-1723)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE Core Runtime 3.11.1.v20150903-1804 (org.eclipse.core.runtime 3.11.1.v20150903-1804)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE Core Runtime 3.18.0.v20200506-2143 (org.eclipse.core.runtime 3.18.0.v20200506-2143)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.827
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE EMF Common 2.22.0.v20210319-0732 (org.eclipse.emf.common 2.22.0.v20210319-0732)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE EMF Common 2.19.0.v20200324-0932 (org.eclipse.emf.common 2.19.0.v20200324-0932)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE EMF Common 2.11.0.v20150805-0538 (org.eclipse.emf.common 2.11.0.v20150805-0538)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE EMF Common 2.11.0.v20150512-0501 (org.eclipse.emf.common 2.11.0.v20150512-0501)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE EMF Common 2.11.1.v20160208-0816 (org.eclipse.emf.common 2.11.1.v20160208-0816)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.827
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE From: Eclipse IDE for Enterprise Java Developers 4.16.0.20200615-1200 (epp.package.jee 4.16.0.20200615-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.platform.feature.group [4.16.0.v20200604-0951,4.16.0.v20200604-0951]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.827
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE From: EMF Common 2.11.1.v20160208-0816 (org.eclipse.emf.common.feature.group 2.11.1.v20160208-0816)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.emf.common [2.11.1.v20160208-0816,2.11.1.v20160208-0816]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.827
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE From: EMF - Eclipse Modeling Framework Runtime and Tools 2.11.2.v20160208-0841 (org.eclipse.emf.feature.group 2.11.2.v20160208-0841)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.emf.common.feature.group [2.11.1.v20160208-0816,2.11.1.v20160208-0816]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.827
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE From: EMF - Eclipse Modeling Framework SDK 2.11.2.v20160208-0841 (org.eclipse.emf.sdk.feature.group 2.11.2.v20160208-0841)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.emf.feature.group [2.11.2.v20160208-0841,2.11.2.v20160208-0841]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.827
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE From: Eclipse Platform 4.16.0.v20200604-0951 (org.eclipse.platform.feature.group 4.16.0.v20200604-0951)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.core.runtime [3.18.0.v20200506-2143,3.18.0.v20200506-2143]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.827
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE From: Structured Source Model 1.2.400.v202004081818 (org.eclipse.wst.sse.core 1.2.400.v202004081818)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE To: osgi.bundle; org.eclipse.emf.common [2.14.0,3.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.827
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE From: Structured Source Model 1.2.600.v202102110535 (org.eclipse.wst.sse.core 1.2.600.v202102110535)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.827
+!MESSAGE To: osgi.bundle; org.eclipse.emf.common [2.14.0,3.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.828
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.828
+!MESSAGE From: Eclipse XML Editors and Tools 1.2.400.v202005192253 (org.eclipse.wst.xml.ui 1.2.400.v202005192253)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.828
+!MESSAGE To: osgi.bundle; org.eclipse.wst.sse.core [1.2.0,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.828
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.828
+!MESSAGE From: Eclipse XML Editors and Tools 1.2.600.v202102222242 (org.eclipse.wst.xml.ui 1.2.600.v202102222242)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.828
+!MESSAGE To: osgi.bundle; org.eclipse.core.runtime [3.20.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.828
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.828
+!MESSAGE From: Eclipse XSL Developer Tools 1.3.900.v202005251734 (org.eclipse.wst.xsl.feature.feature.group 1.3.900.v202005251734)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.828
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.wst.xsl.jaxp.debug.ui [1.1.0.v201901071922,1.1.0.v201901071922]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.828
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.828
+!MESSAGE From: XSL JAXP Debug UI 1.1.0.v201901071922 (org.eclipse.wst.xsl.jaxp.debug.ui 1.1.0.v201901071922)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.828
+!MESSAGE To: osgi.bundle; org.eclipse.wst.xml.ui [1.2.0,2.0.0)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2021-07-24 17:32:08.834
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2021-07-24 17:32:08.835
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE Software being installed: EMF - Eclipse Modeling Framework SDK 2.11.2.v20160208-0841 (org.eclipse.emf.sdk.feature.group 2.11.2.v20160208-0841)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE Software currently installed: Eclipse IDE for Enterprise Java Developers 4.16.0.20200615-1200 (epp.package.jee 4.16.0.20200615-1200)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE Software currently installed: Eclipse XSL Developer Tools 1.3.900.v202005251734 (org.eclipse.wst.xsl.feature.feature.group 1.3.900.v202005251734)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.835
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE Core Runtime 3.22.0.v20210506-1025 (org.eclipse.core.runtime 3.22.0.v20210506-1025)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE Core Runtime 3.11.0.v20150405-1723 (org.eclipse.core.runtime 3.11.0.v20150405-1723)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE Core Runtime 3.11.1.v20150903-1804 (org.eclipse.core.runtime 3.11.1.v20150903-1804)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE Core Runtime 3.18.0.v20200506-2143 (org.eclipse.core.runtime 3.18.0.v20200506-2143)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.835
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE EMF Common 2.22.0.v20210319-0732 (org.eclipse.emf.common 2.22.0.v20210319-0732)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE EMF Common 2.19.0.v20200324-0932 (org.eclipse.emf.common 2.19.0.v20200324-0932)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE EMF Common 2.11.0.v20150805-0538 (org.eclipse.emf.common 2.11.0.v20150805-0538)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE EMF Common 2.11.0.v20150512-0501 (org.eclipse.emf.common 2.11.0.v20150512-0501)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE EMF Common 2.11.1.v20160208-0816 (org.eclipse.emf.common 2.11.1.v20160208-0816)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.835
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE From: Eclipse IDE for Enterprise Java Developers 4.16.0.20200615-1200 (epp.package.jee 4.16.0.20200615-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.platform.feature.group [4.16.0.v20200604-0951,4.16.0.v20200604-0951]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.835
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE From: EMF Common 2.11.1.v20160208-0816 (org.eclipse.emf.common.feature.group 2.11.1.v20160208-0816)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.emf.common [2.11.1.v20160208-0816,2.11.1.v20160208-0816]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.835
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE From: EMF - Eclipse Modeling Framework Runtime and Tools 2.11.2.v20160208-0841 (org.eclipse.emf.feature.group 2.11.2.v20160208-0841)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.emf.common.feature.group [2.11.1.v20160208-0816,2.11.1.v20160208-0816]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.835
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE From: EMF - Eclipse Modeling Framework SDK 2.11.2.v20160208-0841 (org.eclipse.emf.sdk.feature.group 2.11.2.v20160208-0841)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.emf.feature.group [2.11.2.v20160208-0841,2.11.2.v20160208-0841]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.835
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE From: Eclipse Platform 4.16.0.v20200604-0951 (org.eclipse.platform.feature.group 4.16.0.v20200604-0951)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.core.runtime [3.18.0.v20200506-2143,3.18.0.v20200506-2143]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.835
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE From: Structured Source Model 1.2.400.v202004081818 (org.eclipse.wst.sse.core 1.2.400.v202004081818)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE To: osgi.bundle; org.eclipse.emf.common [2.14.0,3.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.835
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE From: Structured Source Model 1.2.600.v202102110535 (org.eclipse.wst.sse.core 1.2.600.v202102110535)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE To: osgi.bundle; org.eclipse.emf.common [2.14.0,3.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.835
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE From: Eclipse XML Editors and Tools 1.2.400.v202005192253 (org.eclipse.wst.xml.ui 1.2.400.v202005192253)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE To: osgi.bundle; org.eclipse.wst.sse.core [1.2.0,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.835
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE From: Eclipse XML Editors and Tools 1.2.600.v202102222242 (org.eclipse.wst.xml.ui 1.2.600.v202102222242)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE To: osgi.bundle; org.eclipse.core.runtime [3.20.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.835
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE From: Eclipse XSL Developer Tools 1.3.900.v202005251734 (org.eclipse.wst.xsl.feature.feature.group 1.3.900.v202005251734)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.wst.xsl.jaxp.debug.ui [1.1.0.v201901071922,1.1.0.v201901071922]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-07-24 17:32:08.835
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE From: XSL JAXP Debug UI 1.1.0.v201901071922 (org.eclipse.wst.xsl.jaxp.debug.ui 1.1.0.v201901071922)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-07-24 17:32:08.835
+!MESSAGE To: osgi.bundle; org.eclipse.wst.xml.ui [1.2.0,2.0.0)
+
+!ENTRY com.tomato.exerd.core 4 0 2021-07-24 18:49:28.522
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in com.tomato.exerd.core.ExerdCore.stop() of bundle com.tomato.exerd.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:920)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1029)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1103)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:851)
+	at org.eclipse.swt.widgets.Display.create(Display.java:835)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:132)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:734)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:725)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1437)
+	at com.tomato.exerd.core.ExerdCore.confirmClipboardDispose(ExerdCore.java:126)
+	at com.tomato.exerd.core.ExerdCore.stop(ExerdCore.java:107)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:900)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:892)
+	... 13 more
+Root exception:
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1103)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:851)
+	at org.eclipse.swt.widgets.Display.create(Display.java:835)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:132)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:734)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:725)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1437)
+	at com.tomato.exerd.core.ExerdCore.confirmClipboardDispose(ExerdCore.java:126)
+	at com.tomato.exerd.core.ExerdCore.stop(ExerdCore.java:107)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:900)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:892)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1029)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-07-24 18:49:28.565
+!MESSAGE An internal error occurred during: "Match Job".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1103)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:851)
+	at org.eclipse.swt.widgets.Display.create(Display.java:835)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:132)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:734)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:725)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1437)
+	at com.tomato.exerd.console.ErdConsole.firePropertyChange(ErdConsole.java:58)
+	at org.eclipse.ui.console.TextConsole.checkFinished(TextConsole.java:540)
+	at org.eclipse.ui.console.TextConsole.matcherFinished(TextConsole.java:531)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:165)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
