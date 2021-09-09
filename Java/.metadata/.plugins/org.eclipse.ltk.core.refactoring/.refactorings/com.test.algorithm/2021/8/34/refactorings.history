@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.test.algorithm.ConnectedComponent&apos; to &apos;ConnectedComponent11724&apos;&#x0A;- Original project: &apos;com.test.algorithm&apos;&#x0A;- Original element: &apos;com.test.algorithm.ConnectedComponent&apos;&#x0A;- Renamed element: &apos;com.test.algorithm.ConnectedComponent11724&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ConnectedComponent&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.test.algorithm{ConnectedComponent.java[ConnectedComponent" matchStrategy="1" name="ConnectedComponent11724" qualified="false" references="true" similarDeclarations="false" stamp="1629203780229" textual="false" version="1.0"/>
+</session>
