@@ -14,7 +14,7 @@ public class Absolute11286 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		int cycle = Integer.parseInt(br.readLine());//반복할 횟수
+		int cycle = Integer.parseInt(br.readLine());//반복할 횟수aa
 		
 		List<Integer> list = new ArrayList<Integer>();
 		
