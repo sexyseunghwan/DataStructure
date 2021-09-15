@@ -1,0 +1,47 @@
+package com.test.algorithm;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+public class Virus2606_1 {
+	static int computer,connection;
+	static int[][] matrix;
+	static int[] visit;
+	static int virusCount;
+	
+	public static void main(String[] args) throws Exception{
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		computer = Integer.parseInt(br.readLine());
+		connection = Integer.parseInt(br.readLine());
+		matrix = new int[computer][computer];
+		visit = new int[computer];
+				
+		for (int i = 0; i < connection; i++) {
+			String[] inputs = br.readLine().split(" ");
+			int N = Integer.parseInt(inputs[0]);
+			int M = Integer.parseInt(inputs[1]);
+			
+			matrix[N-1][M-1] = 1;
+			matrix[M-1][N-1] = 1;
+		}
+		
+		dfs(0);
+		
+	}
+	
+	static void dfs(int num) {
+		visit[num] = 1;
+		virusCount++;
+		
+		for (int i = 0; i < matrix.length; i++) {
+			
+		}
+	}
+	
+
+}
