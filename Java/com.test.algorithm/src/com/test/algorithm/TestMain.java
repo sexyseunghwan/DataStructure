@@ -19,7 +19,8 @@ public class TestMain {
 				if(hex.length() == 1) hexString.append('0');
 				hexString.append(hex);
 			}
-
+				
+			
 			//출력
 			System.out.println(hexString.toString());
 			
