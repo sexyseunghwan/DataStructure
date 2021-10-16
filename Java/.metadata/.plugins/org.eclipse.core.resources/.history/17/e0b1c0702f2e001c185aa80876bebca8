@@ -1,0 +1,16 @@
+package com.test.datastructure;
+
+public class UnionFind {
+	public static void main(String[] args) {
+		
+	}
+	
+	static int getParent(int[] parent,int x) {
+		if (parent[x] == x) return x;
+		return parent[x] = getParent(parent,parent[x]);
+	}
+	
+	static int unionParent(int parent[],int a,int b) {
+		
+	}
+}
