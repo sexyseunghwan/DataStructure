@@ -42,7 +42,7 @@ public class Maze2178 {
 		int[] init = { 0, 0 };
 		queue.offer(init);
 		answerQueue.offer(1);
-		visit[0][0] = 1;
+		//visit[0][0] = 1;
 		
 		while (queue.size() != 0) {
 
@@ -60,13 +60,12 @@ public class Maze2178 {
 			}
 
 			checking(curX, curY, count);
-
 		} // while
 
 	}
 
 	static void checking(int curX, int curY, int count) {
-
+		
 		for (int i = 0; i < 4; i++) {
 
 			int newX = curX + dx[i];
@@ -83,7 +82,7 @@ public class Maze2178 {
 			
 			queue.offer(coordinate);
 			answerQueue.offer(count + 1);
-
+			
 		}
 
 	}
