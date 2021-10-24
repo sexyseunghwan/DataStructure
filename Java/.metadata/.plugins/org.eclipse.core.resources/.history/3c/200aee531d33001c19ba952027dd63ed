@@ -1,7 +1,0 @@
-package com.test.algorithm;
-
-public class Maze2178 {
-	public static void main(String[] args) {
-		
-	}
-}
