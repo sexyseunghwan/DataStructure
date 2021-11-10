@@ -12,8 +12,6 @@ public class TestMain {
 	static int N,M;
 	static int[][] matrix;
 	static int[][] visit;
-	static int[] dx = {1,-1,0,0};
-	static int[] dy = {0,0,1,-1};
 	static Queue<Node> queue = new LinkedList<>();
 	public static void main(String[] args) throws Exception{
 		
@@ -41,26 +39,10 @@ public class TestMain {
 			
 			if (nd.x == N-1 && nd.y == M-1) {
 				System.out.println(visit[N-1][M-1]);
-				break;
 			}
-			
-			bfs(nd);
 		}
-	}
-	
-	static void bfs(Node node) {
 		
-		for (int i = 0; i < 4; i++) {
-			
-			int newX = node.x + dx[i];
-			int newY = node.y + dy[i];
-			
-			if (newY < 0 || newX < 0 || newY >= M || newX >= N || matrix[newX][newY] == 0 || visit[newX][newY] != 0) continue;
-			
-			queue.offer(new Node(newX,newY));
-			visit[newX][newY] = visit[node.x][node.y] + 1;
-			
-		}
+		
 		
 	}
 	

@@ -44,7 +44,7 @@ public class TestMain {
 				break;
 			}
 			
-			bfs(nd);
+			
 		}
 	}
 	
@@ -58,7 +58,7 @@ public class TestMain {
 			if (newY < 0 || newX < 0 || newY >= M || newX >= N || matrix[newX][newY] == 0 || visit[newX][newY] != 0) continue;
 			
 			queue.offer(new Node(newX,newY));
-			visit[newX][newY] = visit[node.x][node.y] + 1;
+			
 			
 		}
 		
