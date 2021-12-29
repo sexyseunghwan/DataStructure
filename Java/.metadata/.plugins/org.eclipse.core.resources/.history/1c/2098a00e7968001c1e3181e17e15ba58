@@ -1,0 +1,84 @@
+package com.test.algorithm;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Laboratory_14502 {
+	
+	static int[][] matrix;
+	static int N,M;
+	static int maxCount = 0;
+	static int[] dx = {1,-1,0,0};
+	static int[] dy = {0,0,1,-1};
+	static Queue<virus> q = new LinkedList<>();
+	static class virus {
+		int x,y;
+		
+		virus(int x,int y) {
+			this.x = x;
+			this.y = y;
+		}
+	}
+	
+	public static void main(String[] args) throws Exception{
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		String[] inputs = br.readLine().split(" ");
+		N = Integer.parseInt(inputs[0]);
+		M = Integer.parseInt(inputs[1]);
+		
+		matrix = new int[N][M];
+		
+		for (int i = 0; i < N; i++) {
+			String[] col = br.readLine().split(" ");
+			
+			for (int j = 0; j < M; j++) {
+				matrix[i][j] = Integer.parseInt(col[j]) ;
+			}
+		}
+		
+		dfs(0);
+	}
+	
+	
+	static void dfs(int cnt) {
+		
+		if (cnt == 3) {
+			
+			return;
+		}//if
+		
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < M; j++) {
+				if (matrix[i][j] == 0) {
+					matrix[i][j] = 1;
+					dfs(cnt+1);
+					matrix[i][j] = 0;
+				}
+			}
+		}
+	}//dfs
+	
+	static void bfs() {
+		
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < M; j++) {
+				if (matrix[i][j] == 2) {
+					q.offer(new virus(i,j));
+				}
+			}
+		}
+		
+		
+	}
+	
+	
+	
+	
+}
