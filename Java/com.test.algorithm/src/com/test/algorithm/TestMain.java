@@ -1,65 +1,101 @@
 package com.test.algorithm;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
-public class TestMain
-{
+public class TestMain {
 	static int N,M;
-	static int[][] map;
+	static int r,c,d;
+	static int arr[][];
+	static int visited[][];
+	static boolean flag = true;
+	static int dx[] = {-1,0,1,0};
+	static int dy[] = {0,1,0,-1};
 	
-	public static void main(String[] args) throws Exception {
-		
+	static int clean = 0;
+	
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer st = new StringTokenizer(br.readLine());
 		
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
 		
-		String[] colRow = br.readLine().split(" ");
-		N = Integer.parseInt(colRow[0]);
-		M = Integer.parseInt(colRow[1]);
+		st = new StringTokenizer(br.readLine());
+		r = Integer.parseInt(st.nextToken());
+		c = Integer.parseInt(st.nextToken());
+		d = Integer.parseInt(st.nextToken());
+		//0 위
+		//1 오
+		//2 아래
+		//3 왼
 		
-		map = new int[N][M];
+		arr = new int[N][M];
+		visited = new int[N][M];
 		
-		for (int i = 0; i < N; i++) {
-		    String[] inputs = br.readLine().split(" ");
-		    
-		    for (int j = 0; j < M; j++) {
-		        map[i][j] = Integer.parseInt(inputs[j]);
-		    }
-		}//for
+		for(int i=0; i<N; i++) {
+			st = new StringTokenizer(br.readLine());
+			for(int j=0; j<M; j++) {
+				arr[i][j] = Integer.parseInt(st.nextToken());
+				if(arr[i][j]==1) visited[i][j] = 2; // 벽 처리
+			}
+		}
 		
-		dfs(0,0);
+		//1. 현재 위치를 청소한다.
+		visited[r][c] = 1;
+		clean++;
 		
-	}
-	
-	//dfs 알고리즘
-	static void dfs(int cnt,int index) {
-	    
-	    //벽 3개를 세웠으면 중지.
-	    if (cnt == 3) {
-	        printMap();
-	        return;
-	    }
+		cleanup();
+		
+		System.out.println(clean);
 
-	    for (int i = 0; i < N*M; i++) {
-	    	if (map[i/M][i%M] == 0) {
-	    		map[i/M][i%M] = 2;
-	    		dfs(cnt+1,i);
-	    		map[i/M][i%M] = 0;
-	    	}
-	    }
-
-	    
 	}
-	
-	//map 표시
-	static void printMap() {
-	    System.out.println("=========================");
-	        
-	   for (int i = 0; i < N; i++) {
-	       for (int j = 0; j < M; j++) {
-	           System.out.print(map[i][j] + " ");
-	       }
-	       System.out.println();
-	    }
+
+	private static void cleanup() {
+		while(flag) {
+			int tmp = 0; // 모든 방향을 확인할 변수
+			
+			for(int k=3; k>=0; k--) {
+				int nr = r+dx[k];
+				int nc = c+dy[k];
+				if(visited[nr][nc]!=0) {
+					tmp++;
+				}
+			}
+			
+			//모든 방향이 청소가 되어있거나 벽이면
+			if(tmp==4) {
+				int behind = (d+2)%4;
+				
+				int br = r+dx[behind];
+				int bc = c+dy[behind];
+				
+				if(visited[br][bc]==2) { //뒤가 벽이라 후진을 할 수 없다면
+					flag = false;
+				} else { //아니라면 후진
+					r = br;
+					c = bc;
+				}
+			}
+			
+			//2. 현재 위치 기준 왼쪽부터 청소
+			for(int k=1; k<=4; k++) {
+				int left = (d-k+4)%4; //현재 기준 왼쪽
+				
+				int lr = r+dx[left];
+				int lc = c+dy[left];
+				
+				if(visited[lr][lc]==0) {
+					visited[lr][lc] = 1;
+					clean++;
+					r = lr;
+					c = lc;
+					d = left;
+					cleanup();
+				}
+			}
+		}
 	}
 }
