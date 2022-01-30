@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.test.algorithm.crash2_2_14442.java&apos; to &apos;Crash2_2_14442.java&apos;&#x0A;- Original project: &apos;com.test.algorithm&apos;&#x0A;- Original element: &apos;com.test.algorithm.crash2_2_14442.java&apos;&#x0A;- Renamed element: &apos;com.test.algorithm.Crash2_2_14442.java&apos;" description="Rename compilation unit &apos;crash2_2_14442.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.test.algorithm{crash2_2_14442.java" name="Crash2_2_14442.java" references="false" stamp="1643549741241" version="1.0"/>
+</session>

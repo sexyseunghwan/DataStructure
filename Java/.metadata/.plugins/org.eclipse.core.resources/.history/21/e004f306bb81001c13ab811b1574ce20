@@ -1,0 +1,45 @@
+package com.test.algorithm;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+public class Crash2_14442 {
+	
+	static int N,M,R;
+	static int[][] map;
+	static int[][][] visit;
+	static int[] dr = {0,0,-1,1};
+	static int[] dc = {1,-1,0,0};
+	static int minDist = 0;;
+	
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		String[] inputs = br.readLine().split(" ");
+		N = Integer.parseInt(inputs[0]);
+		M = Integer.parseInt(inputs[1]);
+		R = Integer.parseInt(inputs[2]);
+		
+		map = new int[N][M];
+		visit = new int[N][M][R];
+		
+		for (int i = 0; i < N; i++) {
+			String[] puts = br.readLine().split(" ");
+ 			for (int j= 0 ;j < M; j++) {
+				map[i][j] = Integer.parseInt(puts[j]);
+			}
+		}
+		
+		
+	}
+	
+	static int bfs() {
+		
+		
+		
+		return 1;
+	}
+}

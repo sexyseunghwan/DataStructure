@@ -1,0 +1,24 @@
+package com.test.algorithm;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+public class Crash2_14442 {
+	
+	static int N,M,R;
+	static int[][] map;
+	static int[][][] visit;
+	static int[] dr = {0,0,-1,1};
+	static int[] dc = {1,-1,0,0};
+	static int minLen = 0;;
+	
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		String[] inputs = br.readLine().split(" ");
+		
+	}
+}

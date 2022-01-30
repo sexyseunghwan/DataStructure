@@ -1,0 +1,15 @@
+package com.test.algorithm;
+
+public class Crash2_1_14442 {
+	
+	static int N,M,R;
+	static int[][] map;
+	static boolean[][] visit;
+	static int[] dr = {0,0,-1,1};
+	static int[] dc = {1,-1,0,0};
+	static int minDist = 0;
+	
+	public static void main(String[] args) throws Exception{
+		
+	}
+}
