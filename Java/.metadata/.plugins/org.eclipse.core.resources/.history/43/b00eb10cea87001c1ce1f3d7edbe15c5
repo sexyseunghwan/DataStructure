@@ -1,0 +1,7 @@
+package com.test.algorithm;
+
+public class Crash2206_test {
+	public static void main(String[] args) throws Exception{
+		
+	}
+}

@@ -1,0 +1,68 @@
+package com.test.algorithm;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.ArrayDeque;
+import java.util.Queue;
+
+import com.test.algorithm.Crash2_14442.Nods;
+
+public class Crash2206_test {
+	
+	static int N,M;
+	static int[][] map;
+	static boolean[][][] visit;
+	static int[] dr = {0,0,-1,1};
+	static int[] dc = {1,-1,0,0};
+	
+	static class Node {
+		int r,c,step;
+		
+		public Node(int r,int c,int step) {
+			this.r = r;
+			this.c = c;
+			this.step = step;
+		}
+	}
+	
+	
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		String[] inputs = br.readLine().split(" ");
+		
+		N = Integer.parseInt(inputs[0]);
+		M = Integer.parseInt(inputs[1]);
+		
+		map = new int[N][M];
+		visit = new boolean[N][M][3];
+		
+		for (int i = 0; i < N; i++) {
+			String[] cols = br.readLine().split(""); 
+			for (int j = 0; j < M; j++) {
+				map[i][j] = Integer.parseInt(cols[j]);
+			}
+		}
+		
+		
+		
+	}
+	
+	
+	static void bfs() {
+		
+		Queue<Node> queue = new ArrayDeque<>(); 
+		visit[0][0][0] = true;
+		queue.offer(new Node(0,0,1));
+		
+		while(!queue.isEmpty()) {
+			
+		}
+		
+	}
+	
+}
