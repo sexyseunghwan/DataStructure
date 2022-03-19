@@ -1,8 +1,0 @@
-package com.test.algorithm;
-
-public class Crash14442_test {
-	public static void main(String[] args) throws Excpetion{
-		
-	}
-
-}

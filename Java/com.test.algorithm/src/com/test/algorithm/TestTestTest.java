@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.LinkedList;
+import java.util.StringTokenizer;
 
 public class TestTestTest {
 	
@@ -12,9 +13,14 @@ public class TestTestTest {
 	
 	public static void main(String[] args) throws Exception{
 		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
+		String input = "1 3 2 4 10";
+		
+		StringTokenizer stk = new StringTokenizer(input," ");
+		
+		while(stk.hasMoreElements()) {
+			System.out.println(stk.nextToken());
+		}
 		
 		
 		
