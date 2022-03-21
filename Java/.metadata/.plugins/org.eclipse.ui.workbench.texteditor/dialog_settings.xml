@@ -6,7 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="INF"/>
 		<list key="findhistory">
+			<item value="INF"/>
+			<item value="initiate()"/>
+			<item value="nitiate()"/>
+			<item value="dijkstra\"/>
+			<item value="dijkstra"/>
 			<item value="package com.test.algorithm;"/>
 		</list>
 		<list key="replacehistory">
