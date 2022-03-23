@@ -1,7 +1,9 @@
 package com.test.algorithm;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.PriorityQueue;
@@ -18,16 +20,17 @@ public class Networking9694 {
 	static int CASE = 1;
 	
 	static class Node {
-		int o,w;
+		int r,w;
 		
-		public Node(int o, int w) {
-			this.o = o;
+		public Node(int r, int w) {
+			this.r = r;
 			this.w = w;
 		}
 	}
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		//BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		T = Integer.parseInt(br.readLine());
 		
@@ -46,16 +49,6 @@ public class Networking9694 {
 			for (int i = 0; i < M; i++) {
 				ArrayList<Node> arr = new ArrayList<Node>();
 				map.add(arr);
-			}
-			
-			for (int i = 0; i < N; i++) {
-				String[] elements = br.readLine().split(" ");
-				int r = Integer.parseInt(elements[0]);
-				int c = Integer.parseInt(elements[1]);
-				int w = Integer.parseInt(elements[2]);
-				
-				map.get(r).add(new Node(c,w));
-				map.get(c).add(new Node(r,w));
 			}
 			
 			dijkstra();
@@ -84,13 +77,13 @@ public class Networking9694 {
 		
 		while(!pq.isEmpty()) {
 			Node nd = pq.poll();
-			int cur = nd.o;
+			int cur = nd.r;
 			int curW = -nd.w;
 			
 			if (visit[cur] < curW) continue;
 			
 			for (int i = 0; i < map.get(cur).size(); i++) {
-				int next =  map.get(cur).get(i).o;
+				int next =  map.get(cur).get(i).r;
 				int nextW =  map.get(cur).get(i).w;
 				
 				if (visit[next] > curW + nextW) {
@@ -101,23 +94,28 @@ public class Networking9694 {
 			}
 		}//while
 		
-		
-		if (visit[M-1] == INF) System.out.printf("Case #%d: -1\n",CASE++);
-		else {
-			Stack<Integer> stack = new Stack<>();
-			
-			for (int i = (M-1); i > 0;) {
-				stack.push(i = prev[i]);
-			}
-
-			System.out.printf("Case #%d:",CASE++);
-			
-			while(!stack.empty()) {
-				System.out.printf(" %d",stack.pop());
-			}
-			
-			System.out.printf(" %d\n",M-1);
+		for (int i = 0; i < M; i++) {
+			System.out.println(visit[i]);
 		}
+		
+		System.out.println("=========");
+		
+//		if (visit[M-1] == INF) System.out.printf("Case #%d: -1\n",CASE++);
+//		else {
+//			Stack<Integer> stack = new Stack<>();
+//			
+//			for (int i = (M-1); i > 0;) {
+//				stack.push(i = prev[i]);
+//			}
+//
+//			System.out.printf("Case #%d:",CASE++);
+//			
+//			while(!stack.empty()) {
+//				System.out.printf(" %d",stack.pop());
+//			}
+//			
+//			System.out.printf(" %d\n",M-1);
+//		}
 		
 		
 	}//dijsktra()
