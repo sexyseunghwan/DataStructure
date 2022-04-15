@@ -38,7 +38,7 @@ public class TestTestTest {
 	
 		pq.offer(new Node(1,31));
 		pq.offer(new Node(2,43));
-		pq.offer(new Node(3,-66));
+		pq.offer(new Node(3,66));
 		
 		System.out.println(pq.peek().v + " " + pq.peek().w);
 	

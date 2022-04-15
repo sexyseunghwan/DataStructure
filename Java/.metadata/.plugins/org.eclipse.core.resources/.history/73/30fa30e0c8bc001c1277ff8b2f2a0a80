@@ -1,0 +1,9 @@
+package com.test.algorithm;
+
+import javax.management.openmbean.OpenMBeanAttributeInfoSupport;
+
+public class ZeldaReview {
+	
+	OpenMBeanAttributeInfoSupport
+
+}

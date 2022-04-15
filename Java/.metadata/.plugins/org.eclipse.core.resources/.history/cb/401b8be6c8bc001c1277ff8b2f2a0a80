@@ -1,0 +1,9 @@
+package com.test.algorithm;
+
+public class ZeldaReview {
+	
+	public static void main(String[] args) throws Exception{
+		
+	}
+
+}
