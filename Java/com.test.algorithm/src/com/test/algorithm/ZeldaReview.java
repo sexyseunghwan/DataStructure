@@ -8,7 +8,6 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-import com.test.algorithm.TestTestTest.Node;
 
 public class ZeldaReview {
 	
@@ -95,7 +94,6 @@ public class ZeldaReview {
 			
 			dijkstra();
 			
-			//System.out.println(visit[N-1][N-1]);
 			String answer = String.format("Problem %d: %d\n", COUNT++,visit[N-1][N-1]);
 			sb.append(answer);
 			
