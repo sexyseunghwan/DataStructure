@@ -14,9 +14,9 @@
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="com.test.algorithm.Shipping5972.Node"/>
-    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
     <fullyQualifiedTypeName name="com.test.algorithm.MoonFox16118.FoxNode"/>
+    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
