@@ -26,21 +26,30 @@ public class TestTestTest {
 	public static void main(String[] args) throws Exception{
 		
 		
-		PriorityQueue<Node> pq = new PriorityQueue<>(new Comparator<Node>() {
-			@Override
-			public int compare(Node n1, Node n2) {
-				
-				if (n1.w > n2.w) return 1;
-				else if (n2.w > n1.w) return -1;
-				else return 0;
-			}
-		});
+//		PriorityQueue<Integer> pq = new PriorityQueue<>(new Comparator<Integer>() {
+//			@Override
+//			public int compare(Integer n1,Integer n2) {
+//				
+//				if (n1 > n2) return -1;
+//				else if (n2 > n1) return 1;
+//				else return 0;
+//			}
+//		});
 	
-		//pq.offer(new Node(1,31));
-		//pq.offer(new Node(2,43));
-		//pq.offer(new Node(3,66));
+		PriorityQueue<Integer> pq = new PriorityQueue<>();
 		
-		//System.out.println(pq.peek().v + " " + pq.peek().w);
+
+		
+		PriorityQueue<Integer>[] pqi = new PriorityQueue[11];
+		
+		pqi[0] = new PriorityQueue<Integer>();
+		
+		pqi[0].add(3);
+		pqi[0].add(4);
+		
+		System.out.println(pqi[0].poll());
+		System.out.println(pqi[0].poll());
+		
 	
 	}
 	
