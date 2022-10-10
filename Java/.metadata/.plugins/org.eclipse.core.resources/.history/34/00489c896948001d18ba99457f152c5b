@@ -1,0 +1,18 @@
+package com.test.algorithm;
+
+import java.io.FileNotFoundException;
+import java.util.Calendar;
+
+public class TestMain {
+ 
+	
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		
+		Calendar c1 = Calendar.getInstance();
+		
+		c1.add(Calendar.HOUR_OF_DAY-9);
+		
+    }
+ 
+}

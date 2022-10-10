@@ -11,7 +11,7 @@ public class TestMain {
 		
 		Calendar c1 = Calendar.getInstance();
 		
-		//c1.add(Calendar.HOUR_OF_DAY,-9);
+		c1.add(Calendar.HOUR_OF_DAY,-9);
 		
 		int years = c1.get(Calendar.YEAR);
 		int months = c1.get(Calendar.MONTH) + 1;

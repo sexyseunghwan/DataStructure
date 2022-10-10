@@ -1,7 +1,0 @@
-package com.test.algorithm;
-
-public class MatrixSeq11049 {
-	public static void main(String[] args) throws Exception{
-		
-	}
-}
